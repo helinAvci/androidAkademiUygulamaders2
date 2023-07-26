@@ -1,5 +1,12 @@
 package com.helinavci.kotlinacademy
 import java.util.*
+fun arraySum( arr : ArrayList<Int>) : Int{
+    var sum = 0
+    for(i in 0..4){
+        sum += arr[i]
+    }
+    return sum
+}
 fun main(){
     val arr = ArrayList<Int>()
     val input = Scanner(System.`in`)
@@ -8,9 +15,7 @@ fun main(){
         var num = input.nextInt()
         arr.add(num)
     }
-    var sum = 0
-    for(i in 0..4){
-        sum += arr[i]
-    }
+    val sum = arraySum(arr)
+  
     println("the sum of this 5 number is $sum")
 }
