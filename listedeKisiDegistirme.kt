@@ -13,7 +13,13 @@ fun main(){
     val input = Scanner(System.`in`)
     val index = input.nextInt()
     val name = input.next()
+    if(index > 5){
+        println("please enter a vailed index.")
+    }
+    else{
     changePerson(index , name , arr)
+    println(arr.toString)
+    }
 
 }
 fun changePerson( index : Int , name : String , arr : ArrayList<String>){
