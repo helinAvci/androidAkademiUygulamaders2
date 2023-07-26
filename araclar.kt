@@ -8,5 +8,8 @@ class Otomobil(hiz : Int ,yakitTuketim : Int,val marka : String ,val  model : St
     fun bagajac(){
         this.isbagajopen = true
     }
-
+fun main(){
+    val otomobil1 = Otomobil(10 , 15, "hudai" , "c3" , 1 , 100.0)
+    otomobil1.bagajac()
+    println(otomobil1.isbagajopen)
 }
